@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cammy Sabby | Terminal</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="css/style.css"
-    />
-    <link rel="icon" type="image/x-icon" href="img/fav-icon.png" />
-  </head>
-  <body>
-    <div id="terminal">
-      <a id="before"></a>
-    </div>
-    <div id="command" onclick="$('texter').focus();">
-      <textarea
-        type="text"
-        id="texter"
-        onkeyup="typeIt(this, event)"
-        onkeydown="typeIt(this, event); 
-                   moveIt(this.value.length, event)"
-        onkeypress="typeIt(this, event);"
-        autofocus
-      ></textarea>
-      <div id="liner">
-        <span id="typer"></span><b class="cursor" id="cursor">█</b>
-      </div>
-    </div>
-    <script src="js/caret.js"></script>
-    <script src="js/commands.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<head>
+<script
+src=""https://code.jquery.com/jquery-3.3.1.min.js"">
+</script>
+<script
+src=""https://unpkg.com/jquery.terminal/js/query.terminal.min.js"">
+</script>
+<link rel="stylesheet"
+href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css">
+</head>
+<body>
+  <script>
+    $('body').terminal({
+      hello: function(what) {
+        this.echo('Hello, ' + what + '. Welcome to this terminal.');
+      }
+    }, {
+      greetings: 'My first terminal',
+    });
+  </script>
+</body>
 </html>
