@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  
 <head>
-<script
-src=""https://code.jquery.com/jquery-3.3.1.min.js"">
-</script>
-<script
-src=""https://unpkg.com/jquery.terminal/js/query.terminal.min.js"">
-</script>
-<link rel="stylesheet"
-href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css">
+    <!--content type : HTML -->
+    <meta http-equiv="content-type" 
+        content="text/html; charset=UTF-8">
+  
+    <!-- Making viewport responsive -->
+    <meta name="viewport" content=
+        "width=device-width,minimum-scale=1,
+        initial-scale=1">
+  
+    <!-- Loading jQuery, jQuery.terminal, 
+        and style sheet -->
+    <script src=
+        "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+  
+    <script src=
+"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+    </script>
+  
+    <link rel="stylesheet" href=
+"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
 </head>
+  
 <body>
   <script>
-    $('body').terminal({
-      hello: function(what) {
-        this.echo('Hello, ' + what + '. Welcome to this terminal.');
-      }
-    }, {
-      greetings: 'My first terminal',
-    });
+  $('body').terminal({
+    iam: function (name) {
+        this.echo('Hello, ' + name 
+        + '. Welcome to GeeksForGeeks');
+    },
+    founder: function () {
+        this.echo('Sandeep Jain');
+    },
+    help: function () {
+        this.echo('iam - iam command and'
+        + ' pass your name as argument'
+        + '\nfounder to know the founder');
+    },
+}, {
+    greetings: 'GeeksForGeeks - A place to'
+    + ' learn DS, Algo and Computer Science'
+    + ' for free'
+});
   </script>
 </body>
 </html>
