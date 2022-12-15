@@ -22,11 +22,11 @@ whoami = [
 
 social = [
   "<br>",
-  'youtube        <a href="' + youtube + '" target="_blank">youtube/electriqul' + "</a>",
-  'twitter        <a href="' + twitter + '" target="_blank">twitter/cameronsabiston' + '</a>',
+  'youtube        <a href="' + youtube + '" target="_blank">youtube/theelectriqulgaming' + "</a>",
+  'twitter        <a href="' + twitter + '" target="_blank">twitter/camgsab99' + '</a>',
   'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/cameronsabiston' + "</a>",
-  'instagram      <a href="' + instagram + '" target="_blank">instagram/cameronsabiston' + '</a>',
-  'github         <a href="' + github + '" target="_blank">github/cameronsabiston' + "</a>",
+  'instagram      <a href="' + instagram + '" target="_blank">instagram/og.cammysabby' + '</a>',
+  'github         <a href="' + github + '" target="_blank">github/camgsab99' + "</a>",
   "<br>"
 ];
 
